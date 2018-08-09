@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
-export class ParentComponent implements OnInit {
- Message: string;
- onClick(parentMessage: string) {
-   this.Message = parentMessage;
- }
-  constructor() { }
+export class ParentComponent {
+parentMessage: string;
+onClick(parentMessage: string) {
+  this.parentMessage = parentMessage;
 
-  ngOnInit() {
-  }
+}
+  constructor() { }
 
 }

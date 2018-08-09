@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule
   ],
-  declarations: [ChildComponent, ParentComponent]
+  declarations: [ParentComponent, ChildComponent]
 })
 export class Module3Module { }
