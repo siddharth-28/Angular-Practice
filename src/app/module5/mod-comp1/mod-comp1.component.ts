@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mod-comp1.component.css']
 })
 export class ModComp1Component implements OnInit {
-
+parentMessage: string;
+onClick(parentMessage: string) {
+  this.parentMessage = parentMessage;
+}
   constructor() { }
 
   ngOnInit() {

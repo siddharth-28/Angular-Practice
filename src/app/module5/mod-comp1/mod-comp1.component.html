@@ -1,3 +1,5 @@
-<p>
-  mod-comp1 works!
-</p>
+<div class="container">
+  <input type="text" #message/>
+  <button (click)="onClick(message.value)">Click</button>
+  <app-mod-comp2 [childMessage]=parentMessage></app-mod-comp2>
+</div>

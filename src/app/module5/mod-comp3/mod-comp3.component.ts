@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mod-comp3',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mod-comp3.component.css']
 })
 export class ModComp3Component implements OnInit {
-
+@Input() message: string;
   constructor() { }
 
   ngOnInit() {
