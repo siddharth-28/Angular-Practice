@@ -1,0 +1,5 @@
+<div class="container">
+    <input type="text" #parentMessage/>
+    <button (click)="onClick(parentMessage.value)">Click</button>
+ <app-child [childMessage]=Message></app-child>
+</div>
